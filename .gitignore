@@ -1,0 +1,32 @@
+cat > .gitignore << 'EOF'
+# Models and large files
+*.tflite
+*.pb
+*.h5
+*.onnx
+*.ckpt*
+*.tgz
+models/
+obj_model/
+*/models/
+*/obj_model/
+
+# Images
+*.jpg
+*.jpeg
+*.png
+*.bmp
+
+# Logs and cache
+*.log
+__pycache__/
+*.pyc
+
+# LFS (prevent future issues)
+.gitattributes
+
+# Datasets
+dataset/
+data/
+images/
+EOF
